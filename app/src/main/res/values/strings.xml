@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">CardapioOnline</string>
+    <string name="main_title">Silva-se</string>
+
+    <!-- Entradas -->
+    <string name="entradas">Entradas</string>
+    <string name="txt_entr_1">Fritas</string>
+    <string name="price_entr_1">R$ 25,90</string>
+
+    <string name="txt_entr_2">Dadinhos de tapioca</string>
+    <string name="price_entr_2">R$ 29,90</string>
+
+    <!-- Pratos principais -->
+    <string name="pratos_prin">Pratos principais</string>
+    <string name="txt_prato_1">Frango à parmegiana</string>
+    <string name="price_prato_1">R$ 22,90</string>
+
+    <string name="txt_prato_2">Carne de sol completa</string>
+    <string name="price_prato_2">R$ 39,90</string>
+
+    <string name="txt_prato_3">Filé de peixe</string>
+    <string name="price_prato_3">R$ 42,90</string>
+
+    <string name="txt_prato_4">Feijoada</string>
+    <string name="price_prato_4">R$ 27,90</string>
+
+    <!-- Bebidas -->
+    <string name="bebidas">Bebidas</string>
+    <string name="txt_bebida_1">Refrigerante 1 l</string>
+    <string name="price_bebida_1">R$ 7,90</string>
+
+    <string name="txt_bebida_2">Suco 1 l</string>
+    <string name="price_bebida_2">R$ 7,90</string>
+
+    <string name="txt_bebida_3">Cerveja 300 ml (gar.)</string>
+    <string name="price_bebida_3">R$ 8,90</string>
+
+    <!-- Sobremesas -->
+    <string name="sobremesas">Sobremesas</string>
+    <string name="txt_sobremesa_1">Brigadeiro de colher</string>
+    <string name="price_sobremesa_1">R$ 19,90</string>
+
+    <string name="txt_sobremesa_2">Pudim</string>
+    <string name="price_sobremesa_2">R$ 15,90</string>
+
+    <string name="txt_total">Total:</string>
+    <string name="txt_valor">R$ 0</string>
+    <string name="txt_btn_pagar">Pagar</string>
+</resources>

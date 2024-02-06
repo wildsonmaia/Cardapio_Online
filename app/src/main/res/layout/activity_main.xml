@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backgd_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6D1111"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/amita_regular"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/main_title"
+        android:textColor="#fff"
+        android:textSize="32sp" />
+
+
+    <View
+        android:id="@+id/backgd_2"
+        android:layout_width="335dp"
+        android:layout_height="641dp"
+        android:layout_alignTop="@id/main_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:background="#DDBD9F" />
+
+    <TextView
+        android:id="@+id/entradas"
+        android:layout_width="199dp"
+        android:layout_height="34dp"
+        android:layout_alignTop="@id/backgd_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/amita_regular"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/entradas"
+        android:textSize="16sp" />
+
+    <!-- 1ª opção de entrada -->
+    <CheckBox
+        android:id="@+id/check_entr_1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@id/backgd_2"
+        android:layout_alignTop="@id/entradas"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/red"
+        android:onClick="onCheckboxClicked"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/txt_entr_1"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/txt_entr_1"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/entradas"
+        android:layout_alignLeft="@id/check_entr_1"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <TextView
+        android:id="@+id/price_entr_1"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/price_entr_1"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/entradas"
+        android:layout_alignLeft="@id/txt_entr_1"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <!-- 2ª opção de entrada -->
+    <CheckBox
+        android:id="@+id/check_entr_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/txt_entr_1"
+        android:layout_alignLeft="@id/backgd_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/red"
+        android:buttonTint="@color/red"
+        android:onClick="onCheckboxClicked"/>
+
+    <TextView
+        android:id="@+id/txt_entr_2"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/txt_entr_2"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/check_entr_1"
+        android:layout_alignLeft="@id/check_entr_2"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <TextView
+        android:id="@+id/price_entr_2"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/price_entr_2"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/check_entr_1"
+        android:layout_alignLeft="@id/txt_entr_2"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <!-- Pratos principais -->
+
+    <TextView
+        android:id="@+id/pratos_prin"
+        android:layout_width="199dp"
+        android:layout_height="34dp"
+        android:layout_alignTop="@id/txt_entr_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/amita_regular"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/pratos_prin"
+        android:textSize="16sp" />
+
+    <!-- 1ª opção de prato -->
+    <CheckBox
+        android:id="@+id/check_prato_1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/pratos_prin"
+        android:layout_alignLeft="@id/backgd_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/red"
+        android:textColor="@color/red"
+        android:onClick="onCheckboxClicked"
+        />
+
+    <TextView
+        android:id="@+id/txt_prato_1"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/txt_prato_1"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/pratos_prin"
+        android:layout_alignLeft="@id/check_prato_1"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <TextView
+        android:id="@+id/price_prato_1"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/price_prato_1"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/pratos_prin"
+        android:layout_alignLeft="@id/txt_prato_1"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <!-- 2ª opção de prato -->
+    <CheckBox
+        android:id="@+id/check_prato_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/check_prato_1"
+        android:layout_alignLeft="@id/backgd_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/red"
+        android:textColor="@color/red"
+        android:onClick="onCheckboxClicked"
+        />
+
+    <TextView
+        android:id="@+id/txt_prato_2"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/txt_prato_2"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/check_prato_1"
+        android:layout_alignLeft="@id/check_prato_2"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <TextView
+        android:id="@+id/price_prato_2"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/price_prato_2"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/check_prato_1"
+        android:layout_alignLeft="@id/txt_prato_2"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <!-- 3ª opção de prato -->
+    <CheckBox
+        android:id="@+id/check_prato_3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/check_prato_2"
+        android:layout_alignLeft="@id/backgd_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/red"
+        android:textColor="@color/red"
+        android:onClick="onCheckboxClicked"
+        />
+
+    <TextView
+        android:id="@+id/txt_prato_3"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/txt_prato_3"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/check_prato_2"
+        android:layout_alignLeft="@id/check_prato_3"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <TextView
+        android:id="@+id/price_prato_3"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/price_prato_3"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/check_prato_2"
+        android:layout_alignLeft="@id/txt_prato_3"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <!-- 4ª opção de prato -->
+    <CheckBox
+        android:id="@+id/check_prato_4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/check_prato_3"
+        android:layout_alignLeft="@id/backgd_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/red"
+        android:textColor="@color/red"
+        android:onClick="onCheckboxClicked"
+        />
+
+    <TextView
+        android:id="@+id/txt_prato_4"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/txt_prato_4"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/check_prato_3"
+        android:layout_alignLeft="@id/check_prato_4"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <TextView
+        android:id="@+id/price_prato_4"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/price_prato_4"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/check_prato_3"
+        android:layout_alignLeft="@id/txt_prato_4"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <!-- Bebidas -->
+
+    <TextView
+        android:id="@+id/bebidas"
+        android:layout_width="199dp"
+        android:layout_height="34dp"
+        android:layout_alignTop="@id/txt_prato_4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/amita_regular"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/bebidas"
+        android:textSize="16sp" />
+
+    <!-- 1ª opção de bebida -->
+    <CheckBox
+        android:id="@+id/check_bebida_1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/bebidas"
+        android:layout_alignLeft="@id/backgd_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/red"
+        android:textColor="@color/red"
+        android:onClick="onCheckboxClicked"
+        />
+
+    <TextView
+        android:id="@+id/txt_bebida_1"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/txt_bebida_1"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/bebidas"
+        android:layout_alignLeft="@id/check_bebida_1"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <TextView
+        android:id="@+id/price_bebida_1"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/price_bebida_1"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/bebidas"
+        android:layout_alignLeft="@id/txt_bebida_1"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <!-- 2ª opção de bebida -->
+    <CheckBox
+        android:id="@+id/check_bebida_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/check_bebida_1"
+        android:layout_alignLeft="@id/backgd_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/red"
+        android:textColor="@color/red"
+        android:onClick="onCheckboxClicked"
+        />
+
+    <TextView
+        android:id="@+id/txt_bebida_2"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/txt_bebida_2"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/check_bebida_1"
+        android:layout_alignLeft="@id/check_bebida_2"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <TextView
+        android:id="@+id/price_bebida_2"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/price_bebida_2"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/check_bebida_1"
+        android:layout_alignLeft="@id/txt_bebida_2"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <!-- 3ª opção de bebida -->
+    <CheckBox
+        android:id="@+id/check_bebida_3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/check_bebida_2"
+        android:layout_alignLeft="@id/backgd_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/red"
+        android:textColor="@color/red"
+        android:onClick="onCheckboxClicked"
+        />
+
+    <TextView
+        android:id="@+id/txt_bebida_3"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/txt_bebida_3"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/check_bebida_2"
+        android:layout_alignLeft="@id/check_bebida_3"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <TextView
+        android:id="@+id/price_bebida_3"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/price_bebida_3"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/check_bebida_2"
+        android:layout_alignLeft="@id/txt_bebida_3"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <!-- Sobremesas -->
+
+    <TextView
+        android:id="@+id/sobremesas"
+        android:layout_width="199dp"
+        android:layout_height="34dp"
+        android:layout_alignTop="@id/txt_bebida_3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/amita_regular"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/sobremesas"
+        android:textSize="16sp" />
+
+    <!-- 1ª opção de sobremesa -->
+    <CheckBox
+        android:id="@+id/check_sobremesa_1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/sobremesas"
+        android:layout_alignLeft="@id/backgd_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/red"
+        android:textColor="@color/red"
+        android:onClick="onCheckboxClicked"
+        />
+
+    <TextView
+        android:id="@+id/txt_sobremesa_1"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/txt_sobremesa_1"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/sobremesas"
+        android:layout_alignLeft="@id/check_sobremesa_1"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <TextView
+        android:id="@+id/price_sobremesa_1"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/price_sobremesa_1"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/sobremesas"
+        android:layout_alignLeft="@id/txt_sobremesa_1"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <!-- 2ª opção de sobremesa -->
+    <CheckBox
+        android:id="@+id/check_sobremesa_2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@id/check_sobremesa_1"
+        android:layout_alignLeft="@id/backgd_2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:buttonTint="@color/red"
+        android:textColor="@color/red"
+        android:onClick="onCheckboxClicked"
+        />
+
+    <TextView
+        android:id="@+id/txt_sobremesa_2"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/txt_sobremesa_2"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/check_sobremesa_1"
+        android:layout_alignLeft="@id/check_sobremesa_2"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <TextView
+        android:id="@+id/price_sobremesa_2"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/price_sobremesa_2"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/check_sobremesa_1"
+        android:layout_alignLeft="@id/txt_sobremesa_2"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <!-- Pagamento -->
+    <TextView
+        android:id="@+id/txt_total"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/txt_total"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/check_sobremesa_2"
+        android:layout_alignLeft="@id/backgd_2"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_valor"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:gravity="center_vertical"
+        android:text="@string/txt_valor"
+        android:fontFamily="@font/amita_regular"
+        android:textColor="@color/red"
+        android:layout_alignTop="@id/txt_total"
+        android:layout_alignLeft="@id/backgd_2"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="27dp"
+        />
+
+    <Button
+        android:id="@+id/btn_pagar"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/txt_total"
+        android:layout_alignTop="@id/check_sobremesa_2"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="@color/red"
+        android:fontFamily="@font/amita_regular"
+        android:text="@string/txt_btn_pagar"
+        android:textColor="#DDBD9F"
+        android:textSize="10sp"
+        app:cornerRadius="?android:attr/buttonCornerRadius" />
+
+</RelativeLayout>
+
